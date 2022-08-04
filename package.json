@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "sass": "sass styles/styles.scss:styles/style.css",
-    "sass-w": "sass styles/styles.scss:styles/style.css"
+    "sass": "sass -w ./styles/styles.scss:./styles/Home.module.css",
+    "serverstart": "npm run sass && npm run dev"
   },
   "dependencies": {
     "bootstrap": "^5.2.0",
