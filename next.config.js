@@ -12,3 +12,12 @@ rewrites: async () => [
     destination: "/pages/api/myfile.js",
   },
 ]
+
+module.exports = {
+  //add other configs here too
+  env: {
+    PORT: 8080,
+    MONGODB: "mongodb+srv,//wkdsteve:020290Ab@freiraum.xvduccp.mongodb.net/?retryWrites=true&w=majority",
+    MONGODBFREIRAUM: "mongodb+srv//wkdsteve:020290Ab@freiraum.xvduccp.mongodb.net/FREIraum?retryWrites=true&w=majority"
+  }
+}

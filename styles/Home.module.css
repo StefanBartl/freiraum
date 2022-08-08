@@ -1,60 +1,22 @@
-/* futura: font-family: futura-pt,sans-serif; */
-@import url("https://use.typekit.net/izw3hmc.css");
-/* general variables */
 .container {
-  min-height: 100vh;
-  line-height: 1.5;
-  padding: 0 2rem;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  font-family: futura-pt, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  /* make images easier to work with */
-  /* make form elements easier to work with */
-  /* remove animations for people who turned them off*/
-}
-.container > *,
-.container > *::before,
-.container > *::after {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box; /* Firefox, other Gecko */
-  box-sizing: border-box; /* Opera/IE 8+ */
-}
-.container > body,
-.container > h1,
-.container > h2,
-.container > h3,
-.container > h4,
-.container > h5,
-.container > h6,
-.container > figure,
-.container > picture {
-  margin: 0;
-}
-.container > img,
-.container > picture {
-  max-width: 100%;
-  display: block;
-}
-.container > input,
-.container > button,
-.container > textarea,
-.container > select {
-  font: inherit;
-}
-@media (prefers-reduced-motion: reduce) {
-  .container *,
-.container *::before,
-.container *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto 5rem;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+  color: white;
+  padding: 1rem;
 }
 
+.header {
+  grid-area: header;
+  margin-top: 1rem;
+  text-align: center;
+}
+.header > h1 {
+  font-size: 6rem;
+}
 .main {
+  grid-area: main;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -63,6 +25,7 @@
 }
 
 .footer {
+  grid-area: footer;
   justify-content: center;
   align-items: center;
 }

@@ -1,75 +1,39 @@
-/* futura: font-family: futura-pt,sans-serif; */
-@import url("https://use.typekit.net/izw3hmc.css");
+$text-optimal-width: clamp(45ch, 50%, 75ch);
+$fs-400: 1rem;
+$fs-500: 1.125rem;
+$fs-600: 1.375rem;
+$fs-700: 2rem;
 
-/* general variables */
-  $font-futura: futura-pt,sans-serif;
-  $fs-400: 1rem;
-  $fs-500: 1.125rem;
-  $fs-600: 1.375rem;
-  $fs-700: 2rem;
-  $text-optimal-width: clamp(45ch, 50%, 75ch);
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto 5rem;
+  grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
 
-.container { 
+  color: white;
+  padding: 1rem;
+}
 
-  min-height: 100vh;
-  line-height: 1.5;
-  padding: 0 2rem;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  font-family: $font-futura;
-  font-weight: 400;
-  font-style: normal; 
+.header {
+  grid-area: header;
+  margin-top: 1rem;
+  text-align: center;
 
-  > *,
-  > *::before,
-  > *::after {
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box; /* Firefox, other Gecko */
-    box-sizing: border-box; /* Opera/IE 8+ */
-  }
-
-  > body,
-  > h1,
-  > h2,
-  > h3,
-  > h4,
-  > h5,
-  > h6,
-  > figure,
-  > picture {
-    margin: 0;
-  }
-
-  /* make images easier to work with */
-  > img,
-  > picture {
-    max-width: 100%;
-    display: block;
-  }
-
-  /* make form elements easier to work with */
-  > input,
-  > button,
-  > textarea,
-  > select {
-    font: inherit;
-  }
-
-  /* remove animations for people who turned them off*/
-  @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
+    >h1 {
+      font-size: 6rem;      
     }
-  }
+    
+    >p{
+    }
 
 }
 
+
 .main {
+  grid-area: main;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -78,6 +42,7 @@
 }
 
 .footer {
+  grid-area: footer;
   justify-content: center;
   align-items: center;
 }
