@@ -2,9 +2,10 @@ import type { NextPage } from 'next';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 
+
 const Home: NextPage = () => {
   return (
-    <div className={`${styles.container} bg-primary `} >
+    <div className={`${styles.container} `} >
 
       <header className={`${styles.header} `} >
           <h1 className=''>FREI:raum</h1>
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
           <h2 className={styles.mdh2}>Absatz 2</h2>
           <p className={styles.mdp2}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odit, aliquid hic laboriosam eum quibusdam laborum asperiores ullam repudiandae porro fugiat possimus aspernatur harum. Ipsa nam saepe odit sequi expedita.</p>
         </div>
+
 
       </main>
 

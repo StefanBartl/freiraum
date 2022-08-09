@@ -1,7 +1,10 @@
 import Head from "next/head";
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/globals.css';
 import type { AppProps } from 'next/app'
+import { Navbar } from '../components/navbar';
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return(
@@ -15,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <link rel="shortcut icon" href="/graphics/logos/dev_logo.png" />
       <title>FREI:raum (alpha-WKD)</title>
     </Head>
+      <Navbar profileImage='../graphics/images/sonnenbild.jpg'/>
       <Component {...pageProps} />
     </>
   ) 
