@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "sass": "sass -w ./styles/styles.scss:./styles/Home.module.css",
+    "sass-global": "sass -w ./styles/global.scss:./styles/global.module.css",
+    "sass-app": "sass -w ./styles/app.scss:./styles/app.module.css",
+    "sass-navbar": "sass -w ./styles/navbar.scss:./styles/navbar.module.css",
+    "sass-home": "sass -w ./styles/home.scss:./styles/Home.module.css",
     "serverstart": "npm run sass && npm run dev"
   },
   "dependencies": {

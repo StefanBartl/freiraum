@@ -1,0 +1,76 @@
+.root {
+  /* futura: font-family: futura-pt,sans-serif; */
+  @import url("https://use.typekit.net/izw3hmc.css");
+  /* general variables */
+}
+.root .container {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  min-height: 100vh;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 2rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* make images easier to work with */
+  /* make form elements easier to work with */
+  /* remove animations for people who turned them off*/
+}
+.root .container > *,
+.root .container > *::before,
+.root .container > *::after {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.root .container > body,
+.root .container > h1,
+.root .container > h2,
+.root .container > h3,
+.root .container > h4,
+.root .container > h5,
+.root .container > h6,
+.root .container > figure,
+.root .container > picture {
+  margin: 0;
+}
+.root .container > img,
+.root .container > picture {
+  max-width: 100%;
+  display: block;
+}
+.root .container > input,
+.root .container > button,
+.root .container > textarea,
+.root .container > select {
+  font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+  .root .container *,
+.root .container *::before,
+.root .container *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.root a {
+  color: inherit;
+  text-decoration: none;
+}
+@media (prefers-color-scheme: dark) {
+  .root html {
+    color-scheme: dark;
+  }
+  .root body {
+    color: white;
+    background: black;
+  }
+}
+
+/*# sourceMappingURL=globals.css.map */
+
+/*# sourceMappingURL=global.module.css.map */
