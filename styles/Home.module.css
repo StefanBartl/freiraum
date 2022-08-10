@@ -3,6 +3,40 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto 5rem;
   grid-template-areas: "main main main" "footer footer footer footer";
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+.leftSidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+.leftSidebar > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.leftSidebar > .leftSidebarSecondSection {
+  border-top: solid 1px lightgrey;
+}
+
+.rightSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.rightSidebar > div {
+  padding: 1rem;
+  border-top: solid 1px lightgrey;
+}
+.rightSidebar > .rightSidebar_ads {
+  border-top: none;
+}
+.rightSidebar > .rightSidebar_contactlist {
+  border-bottom: solid 1px lightgrey;
 }
 
 /*# sourceMappingURL=Home.module.css.map */

@@ -13,11 +13,56 @@ $fbBlue: #1B74E4;
   grid-template-areas: 
     "main main main"
     "footer footer footer footer";
+
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+.leftSidebar{
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  gap: 1rem;
+
+  > div  {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem;
+  }
+
+  > .leftSidebarSecondSection{
+    border-top: solid 1px lightgrey;
+  }
+
 }
 
 
 
+.wall{
 
+}
+
+.rightSidebar{
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  > div{
+    padding: 1rem;
+    border-top: solid 1px lightgrey;
+  }
+
+  > .rightSidebar_ads{
+    border-top: none;
+  }
+
+  > .rightSidebar_contactlist{
+    border-bottom: solid 1px lightgrey;
+  }
+
+}
 
 
 
