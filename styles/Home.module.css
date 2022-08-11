@@ -6,6 +6,9 @@
   padding-top: 1rem;
   gap: 1rem;
 }
+.main > * {
+  outline: solid 1px grey;
+}
 
 .leftSidebar {
   display: flex;
@@ -21,6 +24,32 @@
 }
 .leftSidebar > .leftSidebarSecondSection {
   border-top: solid 1px lightgrey;
+}
+
+.wall {
+  display: flex;
+  flex-direction: column;
+}
+.wall > .newpost {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem;
+  justify-content: center;
+}
+.wall > .newpost > img {
+  width: 2rem;
+  height: 2rem;
+  clip-path: circle(15px at 20px 20px);
+}
+.wall > .newpost > button {
+  background-color: #F0F2F5;
+  color: gray;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+}
+.wall > .currentwall > h2 {
+  text-align: center;
 }
 
 .rightSidebar {

@@ -5,7 +5,16 @@ export default function Wall(props){
 
     return (
         <section className={`${styles.wall}`}>
-            <h1>Wall</h1>
+
+            <div className={`${styles.newpost}`}>
+                <img src='./graphics/images/sonnenbild.jpg' alt='Profilbild' ></img>
+                <button type='text' title='Schreib einen Post'>Was machst du gerade?</button>
+            </div>
+
+            <div className={`${styles.currentwall}`}>
+                <h2>Wall</h2>
+            </div>
+
         </section>
     )
 };
