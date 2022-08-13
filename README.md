@@ -1,7 +1,9 @@
 #WKD || FREI:raum
 
-Project: Odin-Book
-"The Odin-Project" - NodeJS Course
+                            Project: Odin-Book
+                    "The Odin-Project" - NodeJS Course
+
+                    | implemented with Express/React |
 
 Introduction
 
