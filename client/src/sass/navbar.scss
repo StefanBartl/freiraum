@@ -1,6 +1,4 @@
 
-$fbBlue: #1B74E4;
-
 .frNavbar{
   display: flex;
   max-height: 3rem;
@@ -33,7 +31,7 @@ $fbBlue: #1B74E4;
       text-align: center;
 
       font-size: 14px;
-      background-image: url('/graphics/images/magnifyingglass.png');
+      background-image: url('../icons/magnify.svg');
       background-repeat: no-repeat;
       background-position: left 10px top 10px;
       background-size: 1rem;
@@ -91,9 +89,9 @@ $fbBlue: #1B74E4;
 }
 
 .iconActive{
-  border-bottom: solid 2px $fbBlue;
+  border-bottom: solid 2px #1B74E4;
   border-bottom-width: thick;
-  color: $fbBlue;
+  color: #1B74E4;
 }
 
 .frNavCircle{

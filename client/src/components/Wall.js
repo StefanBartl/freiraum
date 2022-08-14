@@ -1,17 +1,17 @@
-import styles from "../styles/Home.module.css";
-import Image from "next/image";
+import '../sass/home.scss';
+import profileIMG from '../images/sonnenbild.jpg';
 
 export default function Wall(props) {
   return (
-    <section className={`${styles.wall}`}>
-      <div className={`${styles.newpost}`}>
-        <img src="./graphics/images/sonnenbild.jpg" alt="Profilbild"></img>
+    <section className={`wall`}>
+      <div className={`newpost`}>
+        <img src={profileIMG} alt="Profilbild"></img>
         <button type="text" title="Schreib einen Post">
           Was machst du gerade?
         </button>
       </div>
 
-      <div className={`${styles.currentwall}`}>
+      <div className={`currentwall`}>
         <h2>Wall</h2>
       </div>
     </section>

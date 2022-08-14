@@ -1,2 +1,21 @@
-@import 'index';
-@import 'app';
+@forward 'index';
+@forward 'app';
+@forward 'navbar';
+@forward 'home';
+
+
+.test{
+    color: springgreen;
+}
+
+
+
+.App{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+    > section{
+        border: solid 1px lightgray;
+    }
+}

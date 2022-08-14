@@ -1,7 +1,8 @@
-import styles from '../styles/navbar.module.css';
+import '../sass/navbar.scss';
 import {useState} from 'react';
+import DevLogo from '../logos/dev_logo.png';
 
-export function Navbar(props){
+export default function Navbar(props){
 
     const [homeActive, setHomeActive] = useState(false);
     const [playActive, setPlayActive] = useState(false);
@@ -29,59 +30,59 @@ export function Navbar(props){
 
     return (
         
-        <nav className={`${styles.frNavbar}`}>
+        <nav className={`frNavbar`}>
 
-            <div className={`${styles.navbarLeftSection}`}>
-            <a className="" href="#"><img src="../graphics/logos/dev_logo.png" className={`${styles.frNavbarLogo}`} alt="FREI:raum"/></a>
+            <div className={`navbarLeftSection`}>
+            <a className="" href="#"><img src={DevLogo} className={`frNavbarLogo`} alt="FREI:raum"/></a>
                 <form className="" >
-                    <input className={`${styles.navbarSEARCHBAR}`} type="search" placeholder="FREI:raum durchsuchen" />
-                    <button className={`${styles.navbarSEARCHBUTTON}`} type="submit">Go</button>
+                    <input className={`navbarSEARCHBAR`} type="search" placeholder="FREI:raum durchsuchen" />
+                    <button className={`navbarSEARCHBUTTON`} type="submit">Go</button>
                 </form>
             </div>        
 
-            <ul className={`${styles.navbarUL}`}>
+            <ul className={`navbarUL`}>
 
-                <li className={`${styles.navbarMiddleLI}`}>
-                    <a className="nav-link active" href="#" title="Home"><i className={homeActive ? `bi bi-house-door-fill ${styles.navbarICON} homeIcon ${styles.iconActive}` : `bi bi-house-door ${styles.navbarICON} homeIcon`} onClick={()=> {handleClick('homeIcon')}}></i></a>
+                <li className={`navbarMiddleLI`}>
+                    <a className="nav-link active" href="#" title="Home"><i className={homeActive ? `bi bi-house-door-fill navbarICON homeIcon iconActive` : `bi bi-house-door navbarICON homeIcon`} onClick={()=> {handleClick('homeIcon')}}></i></a>
                 </li>
 
-                <li className={`${styles.navbarMiddleLI}`}>
-                    <a className="nav-link active" href="#" title="Play"><i className={playActive ? `bi bi-collection-play-fill ${styles.navbarICON} playIcon ${styles.iconActive}` : `bi bi-collection-play ${styles.navbarICON} playIcon`} onClick={()=> {handleClick('playIcon')}}></i></a>
+                <li className={`navbarMiddleLI`}>
+                    <a className="nav-link active" href="#" title="Play"><i className={playActive ? `bi bi-collection-play-fill navbarICON playIcon iconActive` : `bi bi-collection-play navbarICON playIcon`} onClick={()=> {handleClick('playIcon')}}></i></a>
                 </li>
 
-                <li className={`${styles.navbarMiddleLI}`}>
-                    <a className="nav-link active" href="#" title="Shop"><i className={marketActive ? `bi bi-shop ${styles.navbarICON} marketIcon ${styles.iconActive}` : `bi bi-shop ${styles.navbarICON} marketIcon`} onClick={()=> {handleClick('marketIcon')}}></i></a>
+                <li className={`navbarMiddleLI`}>
+                    <a className="nav-link active" href="#" title="Shop"><i className={marketActive ? `bi bi-shop navbarICON marketIcon iconActive` : `bi bi-shop navbarICON marketIcon`} onClick={()=> {handleClick('marketIcon')}}></i></a>
                 </li>
 
-                <li className={`${styles.navbarMiddleLI}`}>
-                    <a className="nav-link active" href="#" title="Gruppen"><i className={groupsActive ? `bi bi-people-fill ${styles.navbarICON} groupsIcon ${styles.iconActive}` : `bi bi-people ${styles.navbarICON} groupsIcon`} onClick={()=> {handleClick('groupsIcon')}}></i></a>
+                <li className={`navbarMiddleLI`}>
+                    <a className="nav-link active" href="#" title="Gruppen"><i className={groupsActive ? `bi bi-people-fill navbarICON groupsIcon iconActive` : `bi bi-people navbarICON groupsIcon`} onClick={()=> {handleClick('groupsIcon')}}></i></a>
                 </li>
 
-                <li className={`${styles.navbarMiddleLI} ${styles.navbarGamesLI}`}>
-                    <a className="nav-link active" href="#" title="Games"><i className={gamesActive ? `bi bi-dice-5-fill ${styles.navbarICON} gamesIcon ${styles.iconActive}` : `bi bi-dice-5 ${styles.navbarICON} gamesIcon`} onClick={()=> {handleClick('gamesIcon')}}></i></a>
+                <li className={`navbarMiddleLI} navbarGamesLI`}>
+                    <a className="nav-link active" href="#" title="Games"><i className={gamesActive ? `bi bi-dice-5-fill navbarICON gamesIcon iconActive` : `bi bi-dice-5 navbarICON gamesIcon`} onClick={()=> {handleClick('gamesIcon')}}></i></a>
                 </li>
 
-                <li className={`${styles.navbarMenuLI}`}>
-                    <div className={`${styles.frNavCircle}`}>
-                        <a className="nav-link active" href="#" title="Menü"><i className={`bi bi-grid-3x3-gap-fill ${styles.navbarICON} ${styles.menuIcon}`}></i></a>
+                <li className={`navbarMenuLI`}>
+                    <div className={`frNavCircle`}>
+                        <a className="nav-link active" href="#" title="Menü"><i className={`bi bi-grid-3x3-gap-fill navbarICON menuIcon`}></i></a>
                     </div>
                 </li>
     
                 <li className={``}>
-                    <div className={`${styles.frNavCircle}`}>
-                        <a className="nav-link active" href="#" title="Nachrichten"><i className={`bi bi-messenger ${styles.navbarICON} ${styles.messengerIcon}`}></i></a>
+                    <div className={`frNavCircle`}>
+                        <a className="nav-link active" href="#" title="Nachrichten"><i className={`bi bi-messenger navbarICON messengerIcon`}></i></a>
                     </div>
                 </li>
 
                 <li className={``}>
-                    <div className={`${styles.frNavCircle}`}>
-                        <a className="nav-link active" href="#" title="Benachrichtigungen"><i className={`bi bi-bell-fill ${styles.navbarICON} ${styles.bellIcon}`}></i></a>
+                    <div className={`frNavCircle`}>
+                        <a className="nav-link active" href="#" title="Benachrichtigungen"><i className={`bi bi-bell-fill navbarICON bellIcon`}></i></a>
                     </div>
                 </li>
 
                 <li className={``}>
                     <div>
-                        <a className="nav-link active" href="#" title="Konto"><img src={props.profileImage} className={`${styles.frNavbarProfileImage}`}/></a>
+                        <a className="nav-link active" href="#" title="Konto"><img src={props.profileImage} className={`frNavbarProfileImage`} alt='Profilbild'/></a>
                     </div>
                 </li>
         

@@ -1,13 +1,12 @@
-import styles from '../styles/Home.module.css';
-import Image from 'next/image';
+import '../sass/home.scss';
 
 export default function LeftSidebar(props){
 
     return (
         <>
-            <section className={`${styles.leftSidebar}`}>
+            <section className={`leftSidebar`}>
 
-                <div className={`${styles.leftSidebarFirstSection}`}>
+                <div className={`leftSidebarFirstSection`}>
                     <a href='#'>Profilname</a>
                     <a href='#'>Freunde</a>
                     <a href='#'>Gruppen</a>
@@ -18,7 +17,7 @@ export default function LeftSidebar(props){
                     <a href='#'>Veranstaltungen</a>
                 </div>
 
-                <div className={`${styles.leftSidebarSecondSection}`}>
+                <div className={`leftSidebarSecondSection`}>
                     <h2>Deine Shortcuts</h2>
                     <a href='#'>Favgruppe</a>
                     <a href='#'>Favprofil</a>
